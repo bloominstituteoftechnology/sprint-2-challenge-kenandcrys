@@ -189,10 +189,10 @@
       for (let i = 0; i < 10; i++) {
         if (isNaN(number[i])) {
           return "invalid phone number";
-        }
+        } 
       }
       let formatted = "(XXX) XXX-XXXX";
-      for (let i = number.length - 1; i >= 0; i--) {
+      for (let i = 0 ; i <= number.length; i++) {
         formatted = formatted.replace("X", number[i]);
       }
 
